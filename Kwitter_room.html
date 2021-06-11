@@ -17,7 +17,27 @@
 <link rel="stylesheet" type="text/css" href="kwitter_room.css">
 
 </head>
-<body>
-<h1>Kwitter Room</h1>
+<body onload="welcome();">
+
+<div class="container">
+<button id="logout" onclick="logout();" class="btn btn-danger">Logout
+    <span id="icon"class="glyphicon glyphicon-log-out btn btn-danger"></span>
+</button>
+</div>
+
+<center>
+<div class="heading">
+<h1>Welcome,</h1>
+<h2 id="welcome">null!</h2>
+</div>
+<br>
+<br>
+<br>
+<input type="text" id="input_roomname" class="form-control" placeholder="Username">
+<br>
+<br>
+<button onclick="addRoom()" id="add_room" class="btn btn-primary">Add Room</button>
+
+</center>
 </body>
 </html>
